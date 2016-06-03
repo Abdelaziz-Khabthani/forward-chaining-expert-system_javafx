@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="705.0" maxWidth="1000.0" minHeight="408.0" minWidth="1000.0" prefHeight="408.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ai.MainWindowController">
+   <children>
+      <Group fx:id="groupSeparators">
+         <children>
+            <Separator fx:id="sep4" layoutX="590.0" layoutY="14.0" orientation="VERTICAL" prefHeight="385.0" />
+            <Separator fx:id="sep2" layoutX="20.0" layoutY="108.0" prefWidth="560.0" />
+            <Separator fx:id="sep1" layoutX="20.0" layoutY="58.0" prefWidth="560.0" />
+            <Separator fx:id="sep3" layoutX="20.0" layoutY="158.0" prefWidth="560.0" />
+         </children>
+      </Group>
+      <Group fx:id="groupBut">
+         <children>
+            <Button fx:id="buttonBut" layoutX="377.0" layoutY="119.0" mnemonicParsing="false" onAction="#loadButAction" text="Charger">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Text fx:id="textBut" layoutX="20.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3) Le but:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="butSaisie" layoutX="317.0" layoutY="122.0" prefHeight="25.0" prefWidth="50.0" />
+            <Circle fx:id="circleBut" layoutX="466.0" layoutY="134.0" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Text fx:id="msgBut" layoutX="486.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Group>
+      <Group fx:id="groupLog">
+         <children>
+            <Text fx:id="logLabelText" layoutX="20.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Log:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="logText" editable="false" layoutX="20.0" layoutY="196.0" prefHeight="200.0" prefWidth="560.0" />
+         </children>
+      </Group>
+      <Group fx:id="groupeRegles">
+         <children>
+            <Text fx:id="textRegles" layoutX="18.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Charger la base des régles:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="buttonRegles" layoutX="377.0" layoutY="19.0" mnemonicParsing="false" onAction="#loadRegleAction" text="Charger">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Circle fx:id="circleRegle" layoutX="466.0" layoutY="34.0" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Text fx:id="msgRegle" layoutX="486.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Group>
+      <Group fx:id="groupFaits">
+         <children>
+            <Button fx:id="buttonFaits" layoutX="377.0" layoutY="69.0" mnemonicParsing="false" onAction="#loadFaitsAction" text="Charger">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Text fx:id="textFaits" layoutX="20.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Charger la base des faits:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Circle fx:id="circleFait" layoutX="466.0" layoutY="85.0" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Text fx:id="msgFait" layoutX="486.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Group>
+      <Group fx:id="groupeSummary" layoutX="582.0" layoutY="-402.0">
+         <children>
+            <Text fx:id="summaryLabel" layoutX="20.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Résumé: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="summaryText" layoutX="35.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group fx:id="other">
+         <children>
+            <Text fx:id="copyright" layoutX="596.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Made By Abdelaziz Khabthani :)" />
+            <Button fx:id="reset" layoutX="903.0" layoutY="370.0" mnemonicParsing="false" onAction="#reset" text="Réintialiser">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
